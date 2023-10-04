@@ -1,0 +1,183 @@
+@import "../../App.scss";
+
+#contact {
+  margin-left: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  gap: 20px;
+  height: 100%;
+  h1 {
+    font-size: $h1FontSize;
+    font-family: "ubuntu";
+    font-weight: 600;
+    color: #fff;
+    margin-top: 24px;
+  }
+  form {
+    background: #00000048;
+    font-family: Poppins;
+    backdrop-filter: blur(8px);
+    margin-top: 40px;
+    margin-left: 48px;
+    border: 1px solid;
+    max-width: 580px;
+    padding: 20px;
+    border-radius: 10px;
+    .form_group {
+      position: relative;
+      padding: 15px 0 0;
+      margin-top: 12px;
+    }
+
+    .form_icon {
+      font-size: 24px;
+      position: absolute;
+      left: 2px;
+      bottom: 5px;
+    }
+
+    .form_field {
+      font-family: Poppins;
+      letter-spacing: 1px;
+      width: 100%;
+      margin-top: 2px;
+      border: 0;
+      border-bottom: 2px solid white;
+      outline: none;
+      font-size: 1.2rem;
+      padding: 7px 0px 7px 35px;
+      color: white;
+      background: transparent;
+
+      &::placeholder {
+        color: transparent;
+      }
+      &:placeholder-shown ~ .form_label {
+        font-size: 1.3rem;
+        cursor: text;
+        top: 23px;
+        color: white;
+      }
+      &:placeholder-shown ~ .form_icon {
+        opacity: 0;
+      }
+    }
+
+    .form_label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: #ffd700;
+    }
+    .form_field:focus {
+      ~ .form_label {
+        position: absolute;
+        top: 0px;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: #ffd700;
+        font-weight: 400;
+      }
+      ~ .form_icon {
+        opacity: 1;
+      }
+      padding-bottom: 6px;
+      font-weight: 400;
+      border-color: #ffd700;
+      border-width: 3px;
+    }
+    .form_field {
+      &:required,
+      &:invalid {
+        box-shadow: none;
+      }
+    }
+    .btn_field {
+      margin: 36px 0 12px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        padding: 8px 15px;
+        font: 400 18px poppins;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+          background: #ffd700;
+        }
+      }
+    }
+  }
+  .contact_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .contact_details {
+    display: flex;
+    align-items: center;
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    a {
+      color: #fff;
+      margin-left: 30px;
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      &:hover {
+        color: #ffd700;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  #contact {
+    margin-left: 0px;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    align-content: start;
+    h1 {
+      margin: 24px 0px 0px 10px;
+    }
+    form {
+      width: calc(100% - 20px);
+      margin: 30px 10px 0px;
+      .form_icon {
+        font-size: 18px;
+      }
+      .form_field {
+        font-size: 1rem;
+        padding: 4px 0px 4px 30px;
+        &:placeholder-shown ~ .form_label {
+          font-size: 1rem;
+        }
+      }
+      .btn_field {
+        margin: 25px 0px 0px;
+        button {
+          padding: 7px 12px;
+          font-size: 14px;
+        }
+      }
+    }
+    .second_heading {
+      font-size: 24px;
+    }
+    .contact_me {
+      gap: 16px;
+      margin-bottom: 16px;
+      .contact_details {
+        margin-left: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.page {
+  margin-left: 80px;
+  height: 100vh;
+  overflow: auto;
+}
+@media only screen and (max-width: 764px) {
+  .page {
+    margin-left: 50px;
+  }
+}

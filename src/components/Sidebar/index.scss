@@ -1,0 +1,139 @@
+.nav-bar {
+  background: #181818;
+  width: 80px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .logo {
+    text-align: center;
+    margin-top: 5px;
+  }
+  nav {
+    width: 100%;
+    display: block;
+    a {
+      font-size: 36px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      color: #4d4d4e;
+      text-decoration: none;
+      padding-block: 12px;
+      height: fit-content;
+      svg {
+        transition: all 0.3s ease-out;
+      }
+      &:hover {
+        svg {
+          opacity: 0;
+        }
+        &:after {
+          color: #ffd700;
+          opacity: 1;
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 5px;
+        border-radius: 0px 5px 5px 0px;
+        background: #ffd700;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+      &:after {
+        content: "";
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        font-weight: 600;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+      &:first-child {
+        &:after {
+          content: "HOME";
+        }
+      }
+      &:nth-child(2) {
+        &:after {
+          content: "ABOUT";
+        }
+      }
+      &:nth-child(3) {
+        &:after {
+          content: "PROJECTS";
+        }
+      }
+      &:nth-child(4) {
+        &:after {
+          content: "CONTACT";
+        }
+      }
+      &.active {
+        svg {
+          color: #ffd700;
+        }
+        &:before {
+          opacity: 1;
+        }
+        &:hover {
+          &:before {
+            width: 100%;
+            border-radius: 0px;
+          }
+          &:after {
+            color: #181818;
+          }
+        }
+      }
+    }
+  }
+  ul {
+    list-style: none;
+
+    text-align: center;
+    li {
+      a {
+        padding: 7px 0px;
+        display: block;
+        font-size: 22px;
+        line-height: 16px;
+        text-decoration: none;
+        color: #4d4d4e;
+        &:hover {
+          color: #0f01ce;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  .nav-bar {
+    width: 50px;
+    nav {
+      a {
+        font-size: 26px;
+        &:after{
+          font-size: 8px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

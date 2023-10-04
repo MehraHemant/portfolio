@@ -1,0 +1,194 @@
+@import "../../App.scss";
+@import "animate.css";
+
+#about {
+  margin-left: 60px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  place-content: center;
+  height: 100%;
+  .about-details {
+    width: 100%;
+  }
+  h1 {
+    font-size: $h1FontSize;
+    font-family: "ubuntu";
+    font-weight: 600;
+    color: #fff;
+    margin-top: 24px;
+  }
+  p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-left: 12px;
+    margin-top: 12px;
+    font-family: poppins;
+  }
+}
+#skills {
+  position: relative;
+  width: 420px;
+  .skills {
+    font-size: 24px;
+    margin-left: 12px;
+    letter-spacing: 1px;
+    font-family: "Ubuntu";
+    font-weight: 600;
+    width: fit-content;
+    padding-right: 15px;
+    border-bottom: 1px solid;
+    margin-top: 18px;
+  }
+  .skill-items {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    li {
+      margin-left: 24px;
+      display: flex;
+      font-size: 24px;
+      font-weight: 600;
+      align-items: center;
+      margin-top: 14px;
+      line-height: 1px;
+      .icon {
+        flex-basis: 50px;
+      }
+      &:first-child {
+        color: #e34c26;
+      }
+      &:nth-child(2) {
+        color: #263de4;
+      }
+      &:nth-child(3) {
+        color: #f0db4f;
+      }
+      &:nth-child(4) {
+        color: #61dbfb;
+      }
+      &:nth-child(5) {
+        color: #3c873a;
+      }
+      &:nth-child(6) {
+        color: #589636;
+      }
+    }
+  }
+}
+
+.stage-cube-count {
+  margin-top: -30%;
+  margin-left: 15%;
+  position: relative;
+  align-self: center;
+  .cubespinner {
+    animation: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0px;
+
+    div {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 0 20px 5px #505050;
+    }
+    .face1 {
+      transform: translateZ(100px);
+    }
+    .face2 {
+      transform: rotateY(90deg) rotateZ(180deg) translateZ(100px);
+    }
+    .face3 {
+      transform: rotateY(270deg) translateZ(100px);
+    }
+    .face4 {
+      transform: rotateY(180deg) translateZ(100px);
+    }
+    .face5 {
+      transform: rotateX(-90deg) translateZ(100px);
+    }
+    .face6 {
+      transform: rotateX(90deg) translateZ(100px);
+    }
+  }
+}
+
+@keyframes spincube {
+  from,
+  to {
+    transform: rotateX(0deg), rotateY(0deg) rotateZ(0deg);
+  }
+  17% {
+    transform: rotateY(90deg);
+  }
+  34% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  51% {
+    transform: rotateX(90deg);
+  }
+  68% {
+    transform: rotateY(-270deg) rotateZ(-180deg);
+  }
+  85% {
+    transform: rotateX(-90deg);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #about {
+    display: grid;
+    margin-left: 10px;
+    p {
+      font-size: 16px;
+    }
+  }
+  .stage-cube-count {
+    margin-left: 78px;
+    z-index: -2;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #about {
+    grid-template-columns: 1fr;
+    place-content: start;
+    margin-left: 0px;
+    width: calc(100% - 10px) ;
+    margin-left: 10px;
+    p {
+      font-size: 14px;
+      margin: 10px;
+    }
+    #skills {
+      width: 60%;
+      .skills {
+        margin-left: 0px;
+      }
+      .skill-items {
+        grid-template-columns: 1fr;
+        li {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .stage-cube-count {
+    height: 300px;
+    margin-top: 70px;
+    width: 100%;
+    overy: hidden;
+    padding-left: 15%;
+    margin-left: 0px;
+    z-index: -2;
+    }
+}

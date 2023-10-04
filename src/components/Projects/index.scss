@@ -1,0 +1,66 @@
+@import "../../App.scss";
+
+#project {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  gap: 25px;
+  height: 100%;
+  h1 {
+    margin-left: 60px;
+    font-family: poppins;
+    font-size: $h1FontSize;
+    color: #fff;
+  }
+  .project-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #00000041;
+    padding: 24px 15%;
+    gap: 25px;
+    video {
+      width: 400px;
+      aspect-ratio: auto;
+    }
+    .project-details {
+      h2 {
+        font: 600 24px poppins;
+        letter-spacing: 1.3px;
+      }
+      a {
+        font: 400 16px poppins;
+        color: #ffd700;
+        margin-left: 2px;
+      }
+      p {
+        font: 400 18px poppins;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  #project {
+    margin-left: 0px;
+    gap: 20px;
+    h1 {
+      margin-left: 10px;
+    }
+    .project-items {
+      grid-template-columns: 1fr;
+      padding: 20px;
+      video {
+        width: 100%;
+      }
+      .project-details {
+        h2 {
+          font-size: 20px;
+        }
+        a{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
