@@ -30,7 +30,7 @@ const Sidebar = () => {
       </nav>
       <ul>
         <li>
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://www.github.com/mehrahemant" target="_blank" rel="noreferrer">
                 <AiFillGithub/>
             </a>
         </li>

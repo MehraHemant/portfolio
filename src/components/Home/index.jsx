@@ -44,7 +44,7 @@ const Home = () => {
         <h3>MERN Stack Web Developer</h3>
         <br />
         <div className="btn_group">
-          <button> Download Resume</button>
+          <button><a href={'../'} download rel="noreferrer">Download Resume</a></button>
           <button
             onClick={() =>
               window.open("https://www.github.com/mehrahemant", "_blank")

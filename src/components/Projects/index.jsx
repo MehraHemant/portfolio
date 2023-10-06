@@ -28,8 +28,8 @@ const Project = () => {
         <video ref={video1} src={portfolio} loop muted />
         <div className="project-details">
           <h2>Portfolio</h2>
-          <a href="">
-            <BiLink /> https://portfolio.com
+          <a href="https://portfolio-eta-sand-75.vercel.app/" target="_blank">
+            <BiLink /> https://portfolio-eta-sand-75.vercel.app/
           </a>
           <p>
             It's a portfolio website, build in react with scss. It showcase my
@@ -51,8 +51,8 @@ const Project = () => {
       >
         <div className="project-details">
           <h2>Zen Classes</h2>
-          <a href="">
-            <BiLink /> https://portfolio.com
+          <a href="https://zen-student-portfolio-client.vercel.app/class">
+            <BiLink /> https://zen-student-portfolio-client.vercel.app/class
           </a>
           <p>
             A student dashboard where student can check there progress, class
@@ -77,10 +77,13 @@ const Project = () => {
         <video ref={video3} src={url_shortner} loop muted />
         <div className="project-details">
           <h2>Url_Shortner</h2>
-          <a href="">
-            <BiLink /> https://portfolio.com
+          <a
+            href="https://url-shortner-client-three.vercel.app/"
+            target="_blank"
+          >
+            <BiLink /> https://url-shortner-client-three.vercel.app/
           </a>
-          <p></p>
+          <p>Convert lengthy urls into sleek and managable urls.</p>
         </div>
       </div>
     </div>
