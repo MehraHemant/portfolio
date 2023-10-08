@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 import bg_img from "../../assets/img.png";
+import resume from "../../assets/Resume.pdf";
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -44,7 +45,7 @@ const Home = () => {
         <h3>MERN Stack Web Developer</h3>
         <br />
         <div className="btn_group">
-          <button><a href={'../'} download rel="noreferrer">Download Resume</a></button>
+          <button><a href={resume} download rel="noreferrer">Download Resume</a></button>
           <button
             onClick={() =>
               window.open("https://www.github.com/mehrahemant", "_blank")
