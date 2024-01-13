@@ -49,6 +49,7 @@ const Project = () => {
           video2.current.currentTime = 0;
         }}
       >
+        <video ref={video2} src={zen} loop muted />
         <div className="project-details">
           <h2>Zen Classes</h2>
           <a href="https://zen-student-portfolio-client.vercel.app/class">
@@ -57,10 +58,9 @@ const Project = () => {
           <p>
             A student dashboard where student can check there progress, class
             data, live classes link and etc. This app is built in react with
-            Material UI.{" "}
+            Material UI.
           </p>
         </div>
-        <video ref={video2} src={zen} loop muted />
       </div>
       <div
         className="project-items"

@@ -12,16 +12,16 @@
     font-size: $h1FontSize;
     color: #fff;
   }
+  
   .project-items {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     background-color: #00000041;
     padding: 24px 15%;
     gap: 25px;
+    justify-content: flex-start;
     video {
       width: 400px;
-      aspect-ratio: auto;
     }
     .project-details {
       h2 {
@@ -39,6 +39,11 @@
     }
   }
 }
+.project-items:nth-child(odd){
+  flex-direction: row-reverse;
+  
+}
+
 
 @media only screen and (max-width: 764px) {
   #project {
@@ -48,7 +53,7 @@
       margin-left: 10px;
     }
     .project-items {
-      grid-template-columns: 1fr;
+      flex-direction: column;
       padding: 20px;
       video {
         width: 100%;

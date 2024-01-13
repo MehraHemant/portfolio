@@ -35,7 +35,7 @@ const Sidebar = () => {
             </a>
         </li>
         <li>
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/hemant-mehra-09b98612b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
                 <AiFillLinkedin/>
             </a>
         </li>
