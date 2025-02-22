@@ -1,46 +1,18 @@
 import { BiLink } from "react-icons/bi";
 import "./index.scss";
-import portfolio from "../../assets/project/portfolio.webm";
 import zen from "../../assets/project/Zen_Classes.webm";
-import url_shortner from "../../assets/project/url_shortner.webm";
+import cfd from "../../assets/project/chaltifirtidukaan.png";
+import bamkart from "../../assets/project/bamkart.png";
 import crm_application from "../../assets/project/crm_application.webm";
-import chat_app from "../../assets/project/chat_app.png"
+import chat_app from "../../assets/project/chat_app.png";
 import { useRef } from "react";
-import { AiFillLinkedin } from "react-icons/ai";
 
 const Project = () => {
-  const video1 = useRef(0);
   const video2 = useRef(0);
-  const video3 = useRef(0);
   const video4 = useRef(0);
   return (
     <div id="project">
       <h1>Projects</h1>
-      <div
-        className="project-items"
-        onMouseEnter={(e) => {
-          e.preventDefault();
-          video1.current.play();
-        }}
-        onMouseLeave={(e) => {
-          e.preventDefault();
-          video1.current.pause();
-          video1.current.currentTime = 0;
-        }}
-      >
-        <video ref={video1} src={portfolio} loop muted />
-        <div className="project-details">
-          <h2>Portfolio</h2>
-          <a href="https://portfolio-eta-sand-75.vercel.app/" target="_blank">
-            <BiLink /> https://portfolio-eta-sand-75.vercel.app/
-          </a>
-          <p>
-            It's a portfolio website, build in react with scss. It showcase my
-            works and skills. It showcases my skills, projects, and contact
-            information with a clean and modern design.
-          </p>
-        </div>
-      </div>
       <div
         className="project-items"
         onMouseEnter={(e) => {
@@ -56,7 +28,7 @@ const Project = () => {
         <video ref={video2} src={zen} loop muted />
         <div className="project-details">
           <h2>Zen Classes</h2>
-          <a href="https://zen-student-portfolio-client.vercel.app/class">
+          <a href="https://zen-student-portfolio-client.vercel.app/class" rel="noreferrer"  target="_blank">
             <BiLink /> https://zen-student-portfolio-client.vercel.app/class
           </a>
           <p>
@@ -67,23 +39,35 @@ const Project = () => {
           </p>
         </div>
       </div>
-      <div
-        className="project-items"
-        // onMouseEnter={(e) => {
-        //   e.preventDefault();
-        //   video3.current?.play();
-        // }}
-        // onMouseLeave={(e) => {
-        //   e.preventDefault();
-        //   video3.current?.pause();
-        //   video3.current?.currentTime = 0;
-        // }}
-      >
-        {/* <video ref={video3} src={url_shortner} loop muted /> */}
-        <img src={chat_app}/>
+      <div className="project-items">
+      <img src={bamkart} />
+        <div className="project-details">
+          <h2>Bamkart</h2>
+          <a
+            href="https://www.bamkart.com/about"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BiLink /> https://www.bamkart.com/about
+          </a>
+          <p>
+            BamKart is an innovative e-commerce platform built with
+            <b>Next.js</b> to provide a seamless and lightning-fast shopping
+            experience. Designed for modern consumers, BamKart offers a diverse
+            range of products, an intuitive user interface, and smooth
+            navigation to make online shopping effortless.
+          </p>
+        </div>
+      </div>
+      <div className="project-items">
+        <img src={chat_app} />
         <div className="project-details">
           <h2>Real-time chat application</h2>
-          <a href="https://chat-app-pi-lime.vercel.app/" target="_blank">
+          <a
+            href="https://chat-app-pi-lime.vercel.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <BiLink />
             https://chat-app-pi-lime.vercel.app/
           </a>
@@ -112,7 +96,11 @@ const Project = () => {
         <video ref={video4} src={crm_application} loop muted />
         <div className="project-details">
           <h2>CRM application</h2>
-          <a href="https://crm-client-tau.vercel.app/login" target="_blank">
+          <a
+            href="https://crm-client-tau.vercel.app/login"
+            rel="noreferrer"
+            target="_blank"
+          >
             <BiLink />
             https://crm-client-tau.vercel.app/login
           </a>
@@ -121,6 +109,27 @@ const Project = () => {
             frontend is developed using React.js, providing a user-friendly
             interface. Backend functionality is managed using Node.js, which
             connects the application to a scalable and robust database.
+          </p>
+        </div>
+      </div>
+      <div className="project-items">
+        <img src={cfd} />
+        <div className="project-details">
+          <h2>Chalti Firti Dukaan</h2>
+          <a
+            href="https://chaltifirtidukaan.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BiLink />
+            https://chaltifirtidukaan.com/
+          </a>
+          <p>
+            A tech-driven &ldquo;Store on Wheels &rdquo; platform that combines
+            traditional retail with mobile convenience. It enables brands to
+            reach customers directly through mobile retail units. Built using
+            Next.js for the frontend and SQL for database management, ensuring a
+            seamless and scalable experience.
           </p>
         </div>
       </div>
