@@ -31,6 +31,24 @@ const Project = () => {
           <a href="https://zen-student-portfolio-client.vercel.app/class" rel="noreferrer"  target="_blank">
             <BiLink /> https://zen-student-portfolio-client.vercel.app/class
           </a>
+          <br/>
+          <a
+            href="https://github.com/MehraHemant/zen-student-portfolio-client"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BiLink />
+            https://github.com/MehraHemant/zen-student-portfolio-client
+          </a>
+          <br/>
+          <a
+            href="https://github.com/MehraHemant/zen-portal-backend"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BiLink />
+            https://github.com/MehraHemant/zen-portal-backend
+          </a>
           <p>
             A student dashboard where student can check there progress, class
             data, live classes link and etc. The front-end, built with React,
@@ -71,6 +89,24 @@ const Project = () => {
             <BiLink />
             https://chat-app-pi-lime.vercel.app/
           </a>
+          <br/>
+          <a
+            href="https://github.com/MehraHemant/Chat_App"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BiLink />
+            https://github.com/MehraHemant/Chat_App
+          </a>
+          <br/>
+          <a
+            href="https://github.com/MehraHemant/Chat_App_Server"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BiLink />
+            https://github.com/MehraHemant/Chat_App_Server
+          </a>
           <p>
             real-time chat application, Used React and Node.js with Socket.io
             for bi-directional communication. The app allows users to send and
@@ -104,6 +140,24 @@ const Project = () => {
             <BiLink />
             https://crm-client-tau.vercel.app/login
           </a>
+          <br/>
+          <a
+            href="https://github.com/MehraHemant/crm-client"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BiLink />
+            https://github.com/MehraHemant/crm-client
+          </a>
+          <br/>
+          <a
+            href="https://github.com/MehraHemant/crm-server"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BiLink />
+            https://github.com/MehraHemant/crm-server
+          </a>
           <p>
             CRM application offers seamless customer experience management. The
             frontend is developed using React.js, providing a user-friendly
@@ -123,6 +177,15 @@ const Project = () => {
           >
             <BiLink />
             https://chaltifirtidukaan.com/
+          </a>
+          <br/>
+          <a
+            href="https://github.com/MehraHemant/chalti_firti_dukan"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BiLink />
+            https://github.com/MehraHemant/chalti_firti_dukan
           </a>
           <p>
             A tech-driven &ldquo;Store on Wheels &rdquo; platform that combines
