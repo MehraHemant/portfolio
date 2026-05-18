@@ -121,19 +121,35 @@ const Contact = () => {
           <h1 className="second_heading">You can also contact me on</h1>
           <div className="contact_details">
             <img src={gmail} alt="" />
-            <a href="mailto:mehrahemu7@gmail.com">mehrahemu7@gmail.com</a>
+            <a
+              href="mailto:mehrahemu7@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              mehrahemu7@gmail.com
+            </a>
           </div>
           <div className="contact_details">
             <img src={insta} alt="" />
-            <a href="">@hemant_mhra</a>
+            <a href="" target="_blank" rel="noreferrer">
+              @hemant_mhra
+            </a>
           </div>
           <div className="contact_details">
             <img src={whatsapp} alt="" />
-            <a href="https://wa.me/918954969666">@Hemant</a>
+            <a
+              href="https://wa.me/918954969666"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @Hemant
+            </a>
           </div>
           <div className="contact_details">
             <img src={call} alt="" />
-            <a href="tel: +91-8954969666">+91-8954969666</a>
+            <a href="tel: +91-8954969666" target="_blank" rel="noreferrer">
+              +91-8954969666
+            </a>
           </div>
         </div>
       </div>
