@@ -1,8 +1,21 @@
-.page {
-  margin-left: 80px;
-  height: 100vh;
-  overflow: auto;
+@import "../../App.scss";
+
+.app {
+  min-height: 100vh;
+  display: flex;
 }
+
+.page {
+  flex: 1;
+  margin-left: 80px;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.page-content {
+  width: 100%;
+}
+
 @media only screen and (max-width: 764px) {
   .page {
     margin-left: 50px;
